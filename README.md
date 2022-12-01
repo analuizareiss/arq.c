@@ -30,7 +30,7 @@ Implemente um programa que grave o nome completo de 5 pessoas em um arquivo bin√
 
          FILE *arq2;
          arq2 = fopen("nomesbinario","w");
-         for(int i=0;i<5;i++){
+         for(int i=0;i<5;i++){ 
             fread(&p,sizeof(pessoa),1,arq2);
             printf("%i)%s\n",i+1,p[i].nome);
          }
